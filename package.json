@@ -6,6 +6,7 @@
   ],
   "dependencies": {},
   "devDependencies": {
-    "lerna": "^8.2.3"
+    "lerna": "^8.2.3",
+    "typescript": "^5.9.3"
   }
 }
