@@ -1,0 +1,26 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "> TODO: description",
+  "author": "minwoo129 <key0129mw@naver.com>",
+  "homepage": "https://github.com/minwoo129/lib-test#readme",
+  "license": "ISC",
+  "main": "lib/react.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/minwoo129/lib-test.git"
+  },
+  "scripts": {
+    "test": "node ./__tests__/react.test.js"
+  },
+  "bugs": {
+    "url": "https://github.com/minwoo129/lib-test/issues"
+  }
+}
