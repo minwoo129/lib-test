@@ -1,5 +1,8 @@
 import js from '@eslint/js';
 import pluginPrettier from 'eslint-plugin-prettier';
+import pluginReact from 'eslint-plugin-react';
+import reactHooks from 'eslint-plugin-react-hooks';
+import reactRefresh from 'eslint-plugin-react-refresh';
 import { globalIgnores } from 'eslint/config';
 import globals from 'globals';
 import { dirname } from 'path';
@@ -32,6 +35,19 @@ export default tseslint.config([
       'no-unused-vars': 'error',
       '@typescript-eslint/no-unused-vars': 'error',
       'no-var': 'error',
+    },
+  },
+  {
+    files: ['packages/react/**/*.{ts,tsx}'],
+    extends: [
+      reactHooks.configs['recommended-latest'],
+      reactRefresh.configs.vite,
+    ],
+    plugins: {
+      react: pluginReact,
+    },
+    rules: {
+      'react/react-in-jsx-scope': 'off',
     },
   },
 ]);
