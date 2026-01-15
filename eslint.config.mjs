@@ -39,14 +39,14 @@ export default tseslint.config([
   },
   {
     files: ['packages/react/**/*.{ts,tsx}'],
-    extends: [
-      reactHooks.configs['recommended-latest'],
-      reactRefresh.configs.vite,
-    ],
     plugins: {
       react: pluginReact,
+      'react-hooks': reactHooks,
+      'react-refresh': reactRefresh,
     },
     rules: {
+      ...reactHooks.configs.recommended.rules,
+      ...reactRefresh.configs.vite.rules,
       'react/react-in-jsx-scope': 'off',
     },
   },
