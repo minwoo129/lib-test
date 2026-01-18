@@ -1,8 +1,8 @@
-/// <reference types="vite/client" />
 import react from '@vitejs/plugin-react';
 import path from 'path';
 import { defineConfig } from 'vite';
 import dts from 'vite-plugin-dts';
+import { libInjectCss } from 'vite-plugin-lib-inject-css';
 
 export default defineConfig({
   plugins: [
@@ -12,6 +12,7 @@ export default defineConfig({
       tsconfigPath: 'tsconfig.json',
     }),
     react(),
+    libInjectCss(),
   ],
   build: {
     lib: {
@@ -21,6 +22,7 @@ export default defineConfig({
       name: '@inf-lib-test/react',
       fileName: 'index',
       formats: ['es', 'umd'],
+      cssFileName: 'index.css',
     },
     rollupOptions: {
       external: ['react', 'react-dom'],
@@ -29,12 +31,16 @@ export default defineConfig({
           react: 'React',
           'react-dom': 'ReactDOM',
         },
+        chunkFileNames: 'chunks/[name].[hash].js',
+        assetFileNames: 'assets/[name][extname]',
+        entryFileNames: '[name].[format].js',
         interop: 'auto',
       },
     },
     commonjsOptions: {
       esmExternals: ['react'],
     },
+    cssCodeSplit: false,
   },
   esbuild: {
     jsx: 'automatic',
