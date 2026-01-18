@@ -1,0 +1,27 @@
+{
+  "name": "@inf-lib-test/react",
+  "version": "1.0.0",
+  "description": "> TODO: description",
+  "author": "minwoo129 <key0129mw@naver.com>",
+  "scripts": {
+    "build": "tsc -b && vite build",
+    "test:unit": "vitest"
+  },
+  "devDependencies": {
+    "@testing-library/dom": "^10.4.1",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.1",
+    "@types/jsdom": "^27",
+    "@types/react": "^19.2.8",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.2",
+    "classnames": "^2.5.1",
+    "jsdom": "^27.4.0",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
+    "vite": "^7.3.1",
+    "vite-plugin-dts": "^4.5.4",
+    "vite-plugin-lib-inject-css": "^2.2.2",
+    "vitest": "^4.0.17"
+  }
+}
