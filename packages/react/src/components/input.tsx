@@ -1,6 +1,7 @@
 'use client';
 import classNames from 'classnames';
 import React from 'react';
+import '../css/input.css';
 
 interface Props extends Omit<
   React.InputHTMLAttributes<HTMLInputElement>,
