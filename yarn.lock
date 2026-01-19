@@ -932,6 +932,15 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@inf-lib-test/utils@workspace:packages/utils":
+  version: 0.0.0-use.local
+  resolution: "@inf-lib-test/utils@workspace:packages/utils"
+  dependencies:
+    vite: "npm:^7.3.1"
+    vite-plugin-dts: "npm:^4.5.4"
+  languageName: unknown
+  linkType: soft
+
 "@inquirer/external-editor@npm:^1.0.0":
   version: 1.0.3
   resolution: "@inquirer/external-editor@npm:1.0.3"
