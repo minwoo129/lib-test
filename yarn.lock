@@ -938,6 +938,7 @@ __metadata:
   dependencies:
     vite: "npm:^7.3.1"
     vite-plugin-dts: "npm:^4.5.4"
+    vitest: "npm:^4.0.17"
   languageName: unknown
   linkType: soft
 
