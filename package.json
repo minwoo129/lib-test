@@ -11,6 +11,7 @@
     "create:project": "lerna create",
     "version:up": "lerna version --yes --no-git-tag-version --force-publish",
     "package:react": "yarn workspace @inf-lib-test/react",
+    "package:utils": "yarn workspace @inf-lib-test/utils",
     "test:unit:react": "yarn package:react test:unit"
   },
   "devDependencies": {
