@@ -1,4 +1,5 @@
 # chunk
+English | [한국어](../ko/array_chunk.md)
 
 Splits an array into smaller arrays of the specified size.
 

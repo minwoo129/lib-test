@@ -1,4 +1,5 @@
 # chunk
+[English](../en/array_chunk.md) | 한국어
 
 배열을 지정된 크기(size)만큼의 작은 배열들로 나누어 반환합니다.
 
