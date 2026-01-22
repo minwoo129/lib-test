@@ -1,6 +1,6 @@
 ---
 trigger: glob
-globs: packages/*/docs/*/util_*.md
+globs: packages/*/docs/*/util_*.md, packages/utils/docs/*/*.md
 ---
 
 # 유틸리티 함수 README 문서 작성
