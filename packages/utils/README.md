@@ -42,5 +42,5 @@ This package provides utility functions for the `inf-lib-test` design system. It
 | Name | Description | Official Docs |
 | :--- | :--- | :---: |
 | add | Calculates the sum of numbers | [Docs](./docs/en/math_add.md) |
-| factorial | Calculates the factorial of a number | [Docs](./docs/en/) |
+| factorial | Calculates the factorial of a number | [Docs](./docs/en/math_factorial.md) |
 | percent | Calculates the percentage | [Docs](./docs/en/) |
