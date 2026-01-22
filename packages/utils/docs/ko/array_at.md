@@ -20,7 +20,7 @@
 ## Examples
 
 ```typescript
-import { at } from '@modern-kit/utils';
+import { at } from '@inf-lib-test/utils';
 
 const array = [1, 2, 3, 4, 5];
 

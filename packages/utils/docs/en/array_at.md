@@ -20,7 +20,7 @@ This function supports **circular access**. If the index is out of the array's b
 ## Examples
 
 ```typescript
-import { at } from '@modern-kit/utils';
+import { at } from '@inf-lib-test/utils';
 
 const array = [1, 2, 3, 4, 5];
 

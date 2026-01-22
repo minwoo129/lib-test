@@ -35,7 +35,7 @@ This package provides utility functions for the `inf-lib-test` design system. It
 | Name | Description | Official Docs |
 | :--- | :--- | :---: |
 | at | Returns the element at a specific index (supports negative index) | [Docs](./docs/en/array_at.md) |
-| chunk | Splits an array into chunks of a specific size | [Docs](./docs/en/) |
+| chunk | Splits an array into chunks of a specific size | [Docs](./docs/en/array_chunk.md) |
 
 ### 3-2. Math
 
