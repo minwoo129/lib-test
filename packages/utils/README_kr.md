@@ -43,5 +43,5 @@
 | :--- | :--- | :---: |
 | add | 숫자들의 합을 계산 | [공식문서](./docs/ko/math_add.md) |
 | factorial | 팩토리얼 계산 | [공식문서](./docs/ko/math_factorial.md) |
-| percent | 백분율 계산 | [공식문서](./docs/ko/) |
+| percent | 백분율 계산 | [공식문서](./docs/ko/math_percent.md) |
 
