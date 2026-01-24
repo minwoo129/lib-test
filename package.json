@@ -11,7 +11,13 @@
     "create:project": "lerna create",
     "version:up": "lerna version --yes --no-git-tag-version --force-publish",
     "package:react": "yarn workspace @inf-lib-test/react",
+    "package:react:build": "yarn package:react build",
+    "package:react:publish": "cd packages/react && npm publish --access=public",
+    "package:react:publish-beta": "cd packages/react && npm publish --tag beta",
     "package:utils": "yarn workspace @inf-lib-test/utils",
+    "package:utils:build": "yarn package:utils build",
+    "package:utils:publish": "cd packages/utils && npm publish --access=public",
+    "package:utils:publish-beta": "cd packages/utils && npm publish --tag beta",
     "test:unit:react": "yarn package:react test:unit",
     "test:unit:utils": "yarn package:utils test:unit"
   },
