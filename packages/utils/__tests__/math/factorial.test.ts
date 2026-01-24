@@ -4,7 +4,7 @@ import { factorial } from '../../src/math/factorial';
 describe('math > factorial', () => {
   it('음수를 제공했을 경우', () => {
     expect(() => factorial(-1)).toThrow(
-      'Factorial is not defined for negative numbers',
+      'Error: negative number is not allowed',
     );
   });
 
@@ -14,6 +14,14 @@ describe('math > factorial', () => {
 
   it('1을 제공했을 경우', () => {
     expect(factorial(1)).toBe(1);
+  });
+
+  it('실수를 제공했을 경우(양의 실수)', () => {
+    expect(() => factorial(1.5)).toThrow('Error: invalid number');
+  });
+
+  it('실수를 제공했을 경우(음의 실수)', () => {
+    expect(() => factorial(-1.5)).toThrow('Error: invalid number');
   });
 
   [
