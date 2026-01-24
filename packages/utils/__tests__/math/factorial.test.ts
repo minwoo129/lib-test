@@ -4,7 +4,7 @@ import { factorial } from '../../src/math/factorial';
 describe('math > factorial', () => {
   it('음수를 제공했을 경우', () => {
     expect(() => factorial(-1)).toThrow(
-      'Factorial is not defined for negative numbers',
+      'Error: negative number is not allowed',
     );
   });
 
