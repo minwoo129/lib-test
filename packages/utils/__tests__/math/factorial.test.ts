@@ -16,6 +16,14 @@ describe('math > factorial', () => {
     expect(factorial(1)).toBe(1);
   });
 
+  it('실수를 제공했을 경우(양의 실수)', () => {
+    expect(() => factorial(1.5)).toThrow('Error: invalid number');
+  });
+
+  it('실수를 제공했을 경우(음의 실수)', () => {
+    expect(() => factorial(-1.5)).toThrow('Error: invalid number');
+  });
+
   [
     { input: 2, output: 2 },
     { input: 3, output: 6 },
