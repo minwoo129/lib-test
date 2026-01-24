@@ -1,6 +1,6 @@
 {
   "name": "@inf-lib-test/utils",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "author": "minwoo129 <key0129mw@naver.com>",
   "license": "MIT",
@@ -10,7 +10,13 @@
   "files": [
     "dist"
   ],
-  "exports": "./dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.umd.cjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
   "homepage": "https://github.com/minwoo129/lib-test",
   "repository": {
     "type": "git",
