@@ -1,0 +1,29 @@
+{
+  "name": "@inf-lib-test/utils",
+  "version": "1.0.0-alpha.1",
+  "type": "module",
+  "author": "minwoo129 <key0129mw@naver.com>",
+  "license": "MIT",
+  "main": "./dist/index.umd.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": "./dist/index.js",
+  "homepage": "https://github.com/minwoo129/lib-test",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/minwoo129/lib-test.git",
+    "directory": "packages/utils"
+  },
+  "scripts": {
+    "build": "tsc -b && vite build",
+    "test:unit": "vitest"
+  },
+  "devDependencies": {
+    "vite": "^7.3.1",
+    "vite-plugin-dts": "^4.5.4",
+    "vitest": "^4.0.17"
+  }
+}
