@@ -4,13 +4,19 @@
   "type": "module",
   "author": "minwoo129 <key0129mw@naver.com>",
   "license": "MIT",
-  "main": "./dist/index.umd.cjs",
-  "module": "./dist/index.js",
+  "main": "./dist/index.umd.js",
+  "module": "./dist/index.es.js",
   "types": "./dist/index.d.ts",
   "files": [
     "dist"
   ],
-  "exports": "./dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.umd.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
   "homepage": "https://github.com/minwoo129/lib-test",
   "repository": {
     "type": "git",
