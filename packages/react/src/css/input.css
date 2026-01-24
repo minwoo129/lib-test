@@ -1,0 +1,12 @@
+.inf-lib-test-input {
+  all: initial;
+  margin-top: 0.125rem; /* mt-0.5 */
+  width: 300px;
+  height: 40px;
+  border-radius: 0.25rem; /* rounded */
+  border: 1px solid #d1d5db; /* border-gray-300 */
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); /* shadow-sm */
+  font-size: 0.875rem; /* sm:text-sm */
+  padding: 0.5rem 0.75rem;
+  box-sizing: border-box;
+}
