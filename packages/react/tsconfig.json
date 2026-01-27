@@ -4,5 +4,5 @@
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
     "jsx": "react",
   },
-  "include": ["src/**/*", "src/**/*.tsx", "src/**/*.ts"]
+  "include": ["src/**/*", "src/**/*.tsx", "src/**/*.ts", "__tests__/**/*"]
 }
